@@ -1,2 +1,14 @@
 
-<h1>Hello World </h1>
+
+<h1><%#binding.pry%></h1>
+<h2><%=params[:team][:name]%></h2><br>
+<h3>Team Motto: <%=params[:team][:motto]%></h3><br>
+<%@team_members.each_with_index do |member, index|%>
+<h4>Hero Name: <%=member[:name]%><br>
+<p>Hero Power: <%=member[:power]%></p><br>
+<p>Hero Biography: <%=member[:bio]%></p><br>
+
+
+
+<%end%>
+
